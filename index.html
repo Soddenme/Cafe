@@ -9,19 +9,21 @@
   <style>
     body {
       padding-top: 60px;
+      background-color: #007bff; /* Blue background */
+      color: #fff; /* Text color for readability */
     }
     header {
-      background-color: #ffcc00;
+      background-color: #0056b3; /* Darker blue for header */
       padding: 20px;
       text-align: center;
     }
     nav a {
       margin: 0 15px;
       text-decoration: none;
-      color: #333;
+      color: #fff;
     }
     footer {
-      background-color: #f8f9fa;
+      background-color: #0056b3;
       padding: 20px;
       text-align: center;
       margin-top: 40px;
@@ -39,6 +41,10 @@
       color: #555;
       font-size: 1.2em;
     }
+    /* Additional styles for seating table */
+    .seating-table {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
   </style>
 </head>
 <body>
@@ -48,10 +54,11 @@
 </header>
 
 <nav class="text-center mb-4">
-  <a href="#home" class="btn btn-outline-primary m-2">Home</a>
-  <a href="#menu" class="btn btn-outline-primary m-2">Menu</a>
-  <a href="#location" class="btn btn-outline-primary m-2">Location</a>
-  <a href="#contact" class="btn btn-outline-primary m-2">Contact</a>
+  <a href="#home" class="btn btn-outline-light m-2">Home</a>
+  <a href="#menu" class="btn btn-outline-light m-2">Menu</a>
+  <a href="#location" class="btn btn-outline-light m-2">Location</a>
+  <a href="#contact" class="btn btn-outline-light m-2">Contact</a>
+  <a href="#seating" class="btn btn-outline-light m-2">Seating</a>
 </nav>
 
 <div class="container">
@@ -101,6 +108,43 @@
         src="https://www.google.com/maps?q=123+Food+Street,+Food+City&output=embed"
         width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
+  </section>
+
+  <!-- Seating/Table Section -->
+  <section id="seating" class="mb-5">
+    <h2 class="mb-3">Seating Area</h2>
+    <p>Enjoy your meal in our cozy seating area with comfortable chairs.</p>
+    <table class="table table-striped seating-table">
+      <thead>
+        <tr>
+          <th>Table Number</th>
+          <th>Seats</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>4</td>
+          <td>Available</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>2</td>
+          <td>Occupied</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>6</td>
+          <td>Available</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>4</td>
+          <td>Occupied</td>
+        </tr>
+      </tbody>
+    </table>
   </section>
 
   <!-- Contact Section -->
